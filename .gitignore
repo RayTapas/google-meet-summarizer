@@ -1,0 +1,8 @@
+# Local Python environment and generated artifacts
+.venv/
+__pycache__/
+*.py[cod]
+outputs/
+
+# Local agent metadata
+.agents/
