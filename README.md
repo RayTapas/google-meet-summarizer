@@ -4,25 +4,9 @@ An on-device Python prototype that turns a meeting audio recording into a transc
 
 ## Before recording
 
-Get clear consent from all participants and comply with your organisation's policies and local recording laws. Google Meet may provide its own recording/transcript facilities for eligible accounts; use them when appropriate and provide the downloaded audio to this tool.
-
-## Install and run (Windows PowerShell)
-
-```powershell
-cd "C:\Users\tapas\OneDrive\Desktop\AI PROJECT\google_meet_summarizer"
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-Open the local link printed by Streamlit (normally `http://localhost:8501`), upload an audio/video recording, choose a model, and select **Transcribe and summarize**.
+Google Meet may provide its own recording/transcript facilities for eligible accounts; use them when appropriate and provide the downloaded audio to this tool.
 
 ## Model choices
-
-- `base`: good quick default for CPU use.
-- `small`: better accuracy, slower and larger download.
-- `medium`: better for difficult audio, substantially slower on CPU.
 
 The selected Whisper model is downloaded automatically on the first run and then cached locally. Outputs are saved to `outputs/` and can be downloaded in the browser.
 
